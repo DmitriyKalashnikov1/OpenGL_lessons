@@ -1,16 +1,19 @@
 #define WINDOWS
 
-#ifdef WINDOWS
-#include "GL/gl.h"
-#endif
-
-
 #ifdef LINUX
 #include "GL/glut.h"
-#endif
-#include "GLFW/glfw3.h"
 #include <stdio.h>
 #include <stdlib.h>
+#endif
+#include "GLFW/glfw3.h"
+#ifdef WINDOWS
+#include "GL/gl.h"
+#include <stdio.h>
+#include <stdlib.h>
+#endif
+
+
+
 
 int main(void)
 {
