@@ -7,7 +7,7 @@ project(${PROJECT_NAME})
 find_package( OpenGL REQUIRED )
 
 include_directories( ${OPENGL_INCLUDE_DIRS} )
-add_executable(INITOPENGL InitOpenGl.cpp)
+add_executable(INITOPENGL InitOpenGL.cpp)
 
 add_subdirectory(glfw)
 
