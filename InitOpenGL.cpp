@@ -1,5 +1,16 @@
-#include "GLFW/glfw3.h"
+#define WINDOWS
+
+#ifdef WINDOWS
 #include "GL/gl.h"
+#endif
+
+
+#ifdef LINUX
+#include "GL/glut.h"
+#endif
+#include "GLFW/glfw3.h"
+#include <stdio.h>
+#include <stdlib.h>
 
 int main(void)
 {
@@ -19,6 +30,9 @@ int main(void)
 
     /* Make the window's context current */
     glfwMakeContextCurrent(window);
+
+    printf("GL_VERSION  : %s\n", glGetString(GL_VERSION) );
+    printf("GL_RENDERER : %s\n", glGetString(GL_RENDERER) );
     //set color
     glClearColor(0.4f, 0.3f, 0.4f, 0.0f);
     /* Loop until the user closes the window */
