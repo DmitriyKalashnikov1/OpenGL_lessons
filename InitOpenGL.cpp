@@ -1,18 +1,12 @@
-#define WINDOWS
-
-#ifdef LINUX
-#include "GL/glut.h"
 #include <stdio.h>
 #include <stdlib.h>
-#endif
-#include "GLFW/glfw3.h"
-#ifdef WINDOWS
-#include "GL/gl.h"
-#include <stdio.h>
-#include <stdlib.h>
-#endif
 
 
+#include <GL/glut.h> //uncoment for linux support
+
+#include <GLFW/glfw3.h>
+
+//#include "GL/gl.h" //uncoment for windows support
 
 
 int main(void)

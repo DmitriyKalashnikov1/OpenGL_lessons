@@ -6,23 +6,29 @@ project(${PROJECT_NAME})
 
 find_package( OpenGL REQUIRED )
 
+
+
+set(GLFW_BUILD_TESTS OFF CACHE BOOL "" FORCE)
+set(GLFW_BUILD_EXAMPLES OFF CACHE BOOL "" FORCE)
+set( GLFW_BUILD_DOCS OFF CACHE BOOL  "GLFW lib only" )
+set( GLFW_INSTALL OFF CACHE BOOL  "GLFW lib only" )
+
 include_directories( ${OPENGL_INCLUDE_DIRS} )
 add_executable(INITOPENGL InitOpenGL.cpp)
 
 add_subdirectory(glfw)
+
 
 if( MSVC )
     SET( CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} /ENTRY:mainCRTStartup" )
 endif()
 
 
-target_link_libraries(INITOPENGL PRIVATE glfw)
+target_link_libraries(INITOPENGL PRIVATE OpenGL::GL )
+target_link_libraries(INITOPENGL PRIVATE ${OPENGL_LIBRARIES} glfw)
 
-target_link_libraries(INITOPENGL PRIVATE OpenGL::GL)
 
 
-set( GLFW_BUILD_DOCS OFF CACHE BOOL  "GLFW lib only" )
-set( GLFW_INSTALL OFF CACHE BOOL  "GLFW lib only" )
 
 if( MSVC )
     if(${CMAKE_VERSION} VERSION_LESS "3.6.0") 
