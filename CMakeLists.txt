@@ -15,6 +15,7 @@ set( GLFW_INSTALL OFF CACHE BOOL  "GLFW lib only" )
 
 include_directories( ${OPENGL_INCLUDE_DIRS} )
 add_executable(INITOPENGL InitOpenGL.cpp)
+add_executable(Triangle Triangle.cpp)
 
 add_subdirectory(glfw)
 
@@ -27,6 +28,8 @@ endif()
 target_link_libraries(INITOPENGL PRIVATE OpenGL::GL )
 target_link_libraries(INITOPENGL PRIVATE ${OPENGL_LIBRARIES} glfw)
 
+target_link_libraries(Triangle PRIVATE OpenGL::GL )
+target_link_libraries(Triangle PRIVATE ${OPENGL_LIBRARIES} glfw)
 
 
 
