@@ -13,7 +13,7 @@ set(GLFW_BUILD_EXAMPLES OFF CACHE BOOL "" FORCE)
 set( GLFW_BUILD_DOCS OFF CACHE BOOL  "GLFW lib only" )
 set( GLFW_INSTALL OFF CACHE BOOL  "GLFW lib only" )
 
-include_directories( ${OPENGL_INCLUDE_DIRS} )
+target_include_directories(${PROJECT_NAME} ${OPENGL_INCLUDE_DIRS} )
 add_executable(INITOPENGL InitOpenGL.cpp)
 add_executable(Triangle Triangle.cpp)
 add_executable(k k.cpp)

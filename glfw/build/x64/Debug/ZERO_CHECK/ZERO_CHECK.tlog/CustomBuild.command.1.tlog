@@ -1,0 +1,10 @@
+^C:\USERS\SLAGT\DOCUMENTS\OPENGL_LESSONS\GLFW\BUILD\CMAKEFILES\0342FCFFFF96D9B4735AAD7EC720266D\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/slagt/Documents/OpenGL_lessons/glfw -BC:/Users/slagt/Documents/OpenGL_lessons/glfw/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/slagt/Documents/OpenGL_lessons/glfw/build/GLFW.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

@@ -1,0 +1,13 @@
+C:/Users/slagt/Documents/OpenGL_lessons/glfw/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/slagt/Documents/OpenGL_lessons/glfw/build/CMakeFiles/ZERO_CHECK.dir
+C:/Users/slagt/Documents/OpenGL_lessons/glfw/build/src/CMakeFiles/update_mappings.dir
+C:/Users/slagt/Documents/OpenGL_lessons/glfw/build/src/CMakeFiles/glfw.dir
+C:/Users/slagt/Documents/OpenGL_lessons/glfw/build/examples/CMakeFiles/boing.dir
+C:/Users/slagt/Documents/OpenGL_lessons/glfw/build/examples/CMakeFiles/gears.dir
+C:/Users/slagt/Documents/OpenGL_lessons/glfw/build/examples/CMakeFiles/heightmap.dir
+C:/Users/slagt/Documents/OpenGL_lessons/glfw/build/examples/CMakeFiles/offscreen.dir
+C:/Users/slagt/Documents/OpenGL_lessons/glfw/build/examples/CMakeFiles/particles.dir
+C:/Users/slagt/Documents/OpenGL_lessons/glfw/build/examples/CMakeFiles/sharing.dir
+C:/Users/slagt/Documents/OpenGL_lessons/glfw/build/examples/CMakeFiles/simple.dir
+C:/Users/slagt/Documents/OpenGL_lessons/glfw/build/examples/CMakeFiles/splitview.dir
+C:/Users/slagt/Documents/OpenGL_lessons/glfw/build/examples/CMakeFiles/wave.dir
