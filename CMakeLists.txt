@@ -1,25 +1,30 @@
 cmake_minimum_required(VERSION 3.24)
 
 set(PROJECT_NAME OpenGL_Lessons)
+set(GLFW_DIR ${CMAKE_CURRENT_SOURCE_DIR}/glfw)
+set(GLFW_SOURCE_DIR ${GLFW_DIR})
+
+message(STATUS "(CMakeLists.txt) GLFW DIR: [${GLFW_DIR}]")
 
 project(${PROJECT_NAME})
 
 find_package( OpenGL REQUIRED )
 
-
+add_subdirectory(${GLFW_DIR})
 
 set(GLFW_BUILD_TESTS OFF CACHE BOOL "" FORCE)
+#set(GLFW_USE_WAYLAND ON CACHE BOOL "" FORCE)
+#set(BUILD_SHARED_LIBS ON CACHE BOOL "" FORCE)
 set(GLFW_BUILD_EXAMPLES OFF CACHE BOOL "" FORCE)
 set( GLFW_BUILD_DOCS OFF CACHE BOOL  "GLFW lib only" )
 set( GLFW_INSTALL OFF CACHE BOOL  "GLFW lib only" )
 
-target_include_directories(${PROJECT_NAME} ${OPENGL_INCLUDE_DIRS} )
+include_directories(${PROJECT_NAME} PUBLIC ${OPENGL_INCLUDE_DIRS} )
+include_directories(${PROJECT_NAME} PUBLIC "${GLFW_DIR}/include" )
 add_executable(INITOPENGL InitOpenGL.cpp)
 add_executable(Triangle Triangle.cpp)
 add_executable(k k.cpp)
 add_executable(home home.cpp)
-
-add_subdirectory(glfw)
 
 
 if( MSVC )
@@ -27,17 +32,13 @@ if( MSVC )
 endif()
 
 
-target_link_libraries(INITOPENGL PRIVATE OpenGL::GL )
-target_link_libraries(INITOPENGL PRIVATE ${OPENGL_LIBRARIES} glfw)
+target_link_libraries(INITOPENGL PRIVATE -lGL -lGLU glfw)
 
-target_link_libraries(Triangle PRIVATE OpenGL::GL )
-target_link_libraries(Triangle PRIVATE ${OPENGL_LIBRARIES} glfw)
+target_link_libraries(Triangle PRIVATE -lGL -lGLU glfw)
 
-target_link_libraries(k PRIVATE OpenGL::GL )
-target_link_libraries(k PRIVATE ${OPENGL_LIBRARIES} glfw)
+target_link_libraries(k PRIVATE -lGL -lGLU glfw )
 
-target_link_libraries(home PRIVATE OpenGL::GL )
-target_link_libraries(home PRIVATE ${OPENGL_LIBRARIES} glfw)
+target_link_libraries(home PRIVATE -lGL -lGLU glfw )
 
 
 if( MSVC )

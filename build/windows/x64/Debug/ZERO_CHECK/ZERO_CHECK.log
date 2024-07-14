@@ -1,0 +1,16 @@
+﻿  Checking Build System
+  CMake is re-running because E:/Creations/C++_programs/OpenGL_lessons/build/windows/CMakeFiles/generate.stamp is out-of-date.
+    the file 'E:/Creations/C++_programs/OpenGL_lessons/CMakeLists.txt'
+    is newer than 'E:/Creations/C++_programs/OpenGL_lessons/build/windows/CMakeFiles/generate.stamp.depend'
+    result='-1'
+  -- Selecting Windows SDK version 10.0.19041.0 to target Windows 10.0.19044.
+  -- Could NOT find Doxygen (missing: DOXYGEN_EXECUTABLE) 
+  -- Using Win32 for window creation
+  -- Configuring done
+  -- Generating done
+  CMake Warning (dev) in CMakeLists.txt:
+    Directory property VS_STARTUP_PROJECT specifies target 'OpenGL_Lessons'
+    that does not exist.  Ignoring.
+  This warning is for project developers.  Use -Wno-dev to suppress it.
+  
+  -- Build files have been written to: E:/Creations/C++_programs/OpenGL_lessons/build/windows

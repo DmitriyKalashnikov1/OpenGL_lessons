@@ -35,7 +35,7 @@
 //========================================================================
 
 // Define this to 1 if building GLFW for X11
-#cmakedefine _GLFW_X11
+#cmakedefine _GLFW_X11 
 // Define this to 1 if building GLFW for Win32
 #cmakedefine _GLFW_WIN32
 // Define this to 1 if building GLFW for Cocoa

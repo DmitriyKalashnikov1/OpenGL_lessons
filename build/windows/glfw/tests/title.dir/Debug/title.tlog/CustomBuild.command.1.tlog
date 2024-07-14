@@ -1,0 +1,10 @@
+^E:\CREATIONS\C++_PROGRAMS\OPENGL_LESSONS\GLFW\TESTS\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/Creations/C++_programs/OpenGL_lessons -BE:/Creations/C++_programs/OpenGL_lessons/buid --check-stamp-file E:/Creations/C++_programs/OpenGL_lessons/buid/glfw/tests/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

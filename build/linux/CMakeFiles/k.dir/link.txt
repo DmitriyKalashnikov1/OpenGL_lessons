@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/k.dir/k.cpp.o -o k  -lGL -lGLU glfw/src/libglfw3.a /usr/lib/x86_64-linux-gnu/librt.a -lm -ldl /usr/lib/x86_64-linux-gnu/libX11.so 

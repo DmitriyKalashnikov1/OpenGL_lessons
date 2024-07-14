@@ -1,0 +1,13 @@
+E:/Creations/C++_programs/OpenGL_lessons/build/windows/CMakeFiles/INITOPENGL.dir
+E:/Creations/C++_programs/OpenGL_lessons/build/windows/CMakeFiles/Triangle.dir
+E:/Creations/C++_programs/OpenGL_lessons/build/windows/CMakeFiles/k.dir
+E:/Creations/C++_programs/OpenGL_lessons/build/windows/CMakeFiles/home.dir
+E:/Creations/C++_programs/OpenGL_lessons/build/windows/CMakeFiles/INSTALL.dir
+E:/Creations/C++_programs/OpenGL_lessons/build/windows/CMakeFiles/ALL_BUILD.dir
+E:/Creations/C++_programs/OpenGL_lessons/build/windows/CMakeFiles/ZERO_CHECK.dir
+E:/Creations/C++_programs/OpenGL_lessons/build/windows/glfw/CMakeFiles/uninstall.dir
+E:/Creations/C++_programs/OpenGL_lessons/build/windows/glfw/CMakeFiles/INSTALL.dir
+E:/Creations/C++_programs/OpenGL_lessons/build/windows/glfw/CMakeFiles/ALL_BUILD.dir
+E:/Creations/C++_programs/OpenGL_lessons/build/windows/glfw/src/CMakeFiles/update_mappings.dir
+E:/Creations/C++_programs/OpenGL_lessons/build/windows/glfw/src/CMakeFiles/glfw.dir
+E:/Creations/C++_programs/OpenGL_lessons/build/windows/glfw/src/CMakeFiles/INSTALL.dir
